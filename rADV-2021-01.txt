@@ -1,0 +1,49 @@
+Advisory: CSRF Vulnerability in Papoo CMS
+Advisory ID: rADV-2021-01
+Author: Reinhard Westerholt
+Affected Software: 21.02 Rev. 04f1ca6 - Papoo Light
+                   6.0.1 Rev. 4770    - Papoo Pro
+Vendor URL: http://www.papoo.de/
+Vendor Status: fixed
+CVE-ID: -
+
+==========================
+Vulnerability Description:
+==========================
+
+The Papoo CMS is vulnerable against CSRF attacks due to missing CSRF protection.
+
+==================
+Technical Details:
+==================
+
+Formulars of the administration interfaces are not protected against CSRF attacks, therefore an attacker could change the admin password through a cross-site remote request.
+
+
+=========
+Solution:
+=========
+
+Update to the latest version
+
+====================
+Disclosure Timeline:
+====================
+08-Mar-2021 – found CSRF weakness
+09-Mar-2021 - informed the developers 
+19-Mar-2021 - fix published by vendor
+03-Apr-2021 - published this security advisory
+
+
+========
+Credits:
+========
+
+Vulnerability found and advisory written by Reinhard Westerholt.
+
+===========
+References:
+===========
+
+http://www.papoo.de/
+https://github.com/raginx/security
